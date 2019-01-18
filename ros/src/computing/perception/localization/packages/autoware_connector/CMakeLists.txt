@@ -14,7 +14,14 @@ find_package(catkin REQUIRED COMPONENTS
         )
 
 
-catkin_package(
+catkin_package(CATKIN_DEPENDS
+        roscpp
+        tf
+        geometry_msgs
+        autoware_msgs
+        autoware_can_msgs
+        nav_msgs
+        std_msgs
 )
 
 include_directories(
